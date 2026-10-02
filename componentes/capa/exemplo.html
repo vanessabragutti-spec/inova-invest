@@ -1,0 +1,39 @@
+<!doctype html>
+<html data-theme="claro" lang="pt-BR">
+<head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css"><title>Capa</title>
+<style>
+  html,body{margin:0;background:var(--fundo)}
+  .cv{position:relative;width:960px;height:288px;background:var(--fundo);overflow:hidden}
+  .cv svg{position:absolute;left:0;top:0;display:block}
+  .azul{fill:var(--azul)} .azul7{fill:var(--azul-700)} .verde{fill:var(--verde)} .tinta{fill:var(--verde-100)}
+  .cv-txt{position:absolute;left:40px;bottom:32px;max-width:880px}
+  .cv-nome{font:700 64px/.95 var(--font-marca);color:var(--texto);letter-spacing:-.01em}
+  .cv-nome b{color:var(--texto-destaque);font-weight:700}
+  .cv-linha{margin-top:16px;font:500 14px/20px var(--font-marca);color:var(--texto-suave)}
+</style></head>
+<body>
+<div class="cv">
+<svg width="960" height="112" viewBox="0 0 960 112" aria-hidden="true">
+  <!-- blocos: azul 0–560 (112 = space-8 + space-3), verde trapézio 560–752 com lateral a 19° (grafismo-inclinacao), azul-700 752–880, verde-100 880–960
+       arranjo: faixa de blocos desiguais no topo, como a capa do guia (azul dominante, verde cortando em diagonal)
+       padrão: motivo literal, o + do logo, quatro vezes em verde sobre o azul, passo de 96 px (space-8); escolhido porque o + é o símbolo da marca
+       medidas: space-3 16, space-6 48, space-8 96; radius-0 em tudo (marca de cantos retos) -->
+  <rect class="azul" x="0" y="0" width="600" height="112"/>
+  <polygon class="verde" points="600,0 760,0 722,112 562,112"/>
+  <rect class="azul7" x="760" y="0" width="120" height="112"/>
+  <polygon class="azul7" points="722,112 760,0 760,112"/>
+  <rect class="tinta" x="880" y="0" width="80" height="112"/>
+  <g class="verde">
+    <path d="M58 32h12v14h14v12H70v16H58V58H44V46h14z"/>
+    <path d="M154 32h12v14h14v12h-14v16h-12V58h-14V46h14z"/>
+    <path d="M250 32h12v14h14v12h-14v16h-12V58h-14V46h14z"/>
+    <path d="M346 32h12v14h14v12h-14v16h-12V58h-14V46h14z"/>
+  </g>
+</svg>
+<div class="cv-txt">
+  <div class="cv-nome">Inova<b>+</b>Invest</div>
+  <div class="cv-linha">Identidade para os materiais do programa da ABVCAP e da ApexBrasil, com a parceria da ACE Ventures.</div>
+</div>
+</div>
+</body>
+</html>
