@@ -2,18 +2,20 @@
 
 Design system dos **materiais** do Inova+Invest (posts, slides, one-pagers, banners, e-mails). Versão navegável: https://claude.ai/artifact/CFBB7KqZahpfgeFNrAeYZX
 
-## Arquivos
+## Estrutura do repositório
 
-| Pasta / arquivo | O que é |
+| Caminho | O que é |
 |---|---|
-| `tokens.css` | Variáveis CSS de cor, espaçamento, raio e medidas de marca, mais as classes de tipografia (`.display`, `.titulo-1` … `.etiqueta`). Tema claro é o padrão; `data-theme="azul"` num contêiner troca para o tema de fundo azul. |
-| `tokens.json` | Os mesmos tokens em JSON, com a nota de uso de cada um. |
-| `componentes.css` | Classes dos componentes (`ii-etiqueta`, `ii-botao`, `ii-assinatura`, `ii-agenda`, `ii-palestrante`, `ii-destaque`, `ii-peca`, `ii-trapezio`, `ii-mais`). Carregue depois de `tokens.css`. |
-| `exemplos/` | Um HTML de exemplo por componente e template, com o conteúdo real do webinar, e um `.md` com as regras de uso de cada um. |
-| `logos/` | As 6 versões do logo Inova+Invest (PNG transparente). |
-| `assinatura/` | ABVCAP, trio ApexBrasil + Governo do Brasil, ACE Ventures. |
-| `grafismos/` | Trapézio verde (19°) e sinal + (SVG). |
-| `referencias/` | Guia de ID visual Inova+Invest e Brandbook ApexBrasil Projetos Setoriais 2025 (as fontes deste sistema). |
+| `styles.css` | Ponto de entrada. Importa `tokens/tokens.css` e `componentes/componentes.css`. Carregue só este arquivo. |
+| `tokens/tokens.css` | Variáveis CSS de cor, espaçamento, raio e medidas de marca, e as classes de tipografia (`.display`, `.titulo-1`, `.titulo-2`, `.titulo-3`, `.numero`, `.lead`, `.corpo`, `.legenda`, `.etiqueta`). O tema claro é o padrão; `data-theme="azul"` num contêiner troca para o tema de fundo azul. |
+| `tokens/tokens.json` | Os mesmos tokens em JSON, com a nota de uso de cada um. |
+| `componentes/componentes.css` | Classes dos componentes: `ii-etiqueta`, `ii-botao`, `ii-assinatura`, `ii-agenda`, `ii-palestrante`, `ii-destaque`, `ii-peca`, `ii-trapezio`, `ii-mais`. |
+| `componentes/<nome>/` | Um exemplo HTML (`exemplo.html`) e as regras de uso (`README.md`) de cada componente: etiqueta, botao, assinatura, agenda, palestrante, destaque, post-feed, slide, capa. |
+| `assets/logos/` | As 6 versões do logo Inova+Invest (PNG transparente). |
+| `assets/assinatura/` | ABVCAP, trio ApexBrasil + Governo do Brasil, ACE Ventures. |
+| `assets/grafismos/` | Trapézio verde (19°) e sinal + (SVG). |
+| `referencias/` | Guia de ID visual Inova+Invest e Brandbook ApexBrasil Projetos Setoriais 2025, as fontes deste sistema. |
+| `arquivos-originais/` | Matrizes recebidas (AI, PDF, PSD, JPG, PNG) para impressão e edição. Não são usadas diretamente pelo sistema. |
 
 Fonte oficial: **Museo Sans 500 e 700**. Os arquivos da fonte não estão neste pacote por licença; instale no computador para produzir as peças. Substituta em tela: Nunito Sans (Google Fonts).
 
