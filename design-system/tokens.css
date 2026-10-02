@@ -1,0 +1,73 @@
+/* Tokens Inova+Invest. Tema padrão: fundo claro. Use data-theme="azul" num contêiner para o tema de fundo azul. */
+:root,[data-theme="claro"]{
+  --azul:#112468;
+  --verde:#80c842;
+  --preto:#000000;
+  --cinza:#949494;
+  --azul-700:#1c3283;
+  --azul-300:#8994c2;
+  --azul-100:#d9deee;
+  --azul-050:#f2f4f9;
+  --verde-escuro:#3f7a16;
+  --verde-100:#eaf5de;
+  --branco:#ffffff;
+  --fundo:var(--branco);
+  --fundo-alt:var(--azul-050);
+  --texto:var(--azul);
+  --texto-suave:#4a5580;
+  --texto-destaque:var(--verde-escuro);
+  --linha:var(--azul-100);
+  --acento:var(--verde);
+  --sobre-acento:var(--azul);
+  --contorno-botao:var(--azul);
+}
+[data-theme="azul"]{
+  --azul:#112468;
+  --verde:#80c842;
+  --preto:#000000;
+  --cinza:#949494;
+  --azul-700:#1c3283;
+  --azul-300:#8994c2;
+  --azul-100:#d9deee;
+  --azul-050:#f2f4f9;
+  --verde-escuro:#3f7a16;
+  --verde-100:#eaf5de;
+  --branco:#ffffff;
+  --fundo:var(--azul);
+  --fundo-alt:var(--azul-700);
+  --texto:var(--branco);
+  --texto-suave:#c3cae3;
+  --texto-destaque:var(--verde);
+  --linha:#2e4596;
+  --acento:var(--verde);
+  --sobre-acento:var(--azul);
+  --contorno-botao:var(--branco);
+}
+:root{
+  --space-1:4px;
+  --space-2:8px;
+  --space-3:16px;
+  --space-4:24px;
+  --space-5:32px;
+  --space-6:48px;
+  --space-7:64px;
+  --space-8:96px;
+  --radius-0:0;
+  --radius-1:2px;
+  --radius-foto:50%;
+  --logo-min-tela:100px;
+  --logo-min-impresso:15mm;
+  --apex-min-tela:35px;
+  --apex-min-impresso:7mm;
+  --grafismo-inclinacao:19deg;
+  --font-marca:"Museo Sans", "Nunito Sans", "Segoe UI", system-ui, sans-serif;
+}
+.display{font-family:var(--font-marca);font-size:64px;line-height:68px;font-weight:700;letter-spacing:-0.01em;}
+.titulo-1{font-family:var(--font-marca);font-size:44px;line-height:50px;font-weight:700;}
+.titulo-2{font-family:var(--font-marca);font-size:32px;line-height:38px;font-weight:700;}
+.titulo-3{font-family:var(--font-marca);font-size:24px;line-height:30px;font-weight:700;}
+.numero{font-family:var(--font-marca);font-size:56px;line-height:56px;font-weight:700;}
+.lead{font-family:var(--font-marca);font-size:20px;line-height:30px;font-weight:500;}
+.corpo{font-family:var(--font-marca);font-size:16px;line-height:26px;font-weight:500;}
+.legenda{font-family:var(--font-marca);font-size:13px;line-height:18px;font-weight:500;}
+.etiqueta{font-family:var(--font-marca);font-size:12px;line-height:16px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;}
